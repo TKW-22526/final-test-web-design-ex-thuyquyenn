@@ -117,19 +117,22 @@ const chiTiet = document.getElementById("chi-tiet");
 
 if(chiTiet && cay){
 
-    chiTiet.innerHTML = `
-        <div class="chi-tiet-cay">
+   chiTiet.innerHTML = `
+<div class="chi-tiet-cay">
 
-            <img src="${cay.hinh}" alt="${cay.ten}">
+    <img src="${cay.hinh}" alt="${cay.ten}">
 
-            <h2>${cay.ten}</h2>
+    <h2>${cay.ten}</h2>
 
-            <p class="gia">${cay.gia}</p>
+    <p class="gia">${cay.gia}</p>
 
-            <p>${cay.moTa}</p>
+    <p>${cay.moTa}</p>
 
-            <a href="san-pham.html">Quay lại</a>
+    <div class="khung-quay-lai">
+        <a href="san-pham.html">← Quay lại</a>
+    </div>
 
-        </div>
-    `;
+</div>
+`;
+
 }

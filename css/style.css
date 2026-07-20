@@ -265,18 +265,43 @@ body{
     text-align: justify;
 }
 
-.nut-trang button{
-    background:#2e7d32;
-    color:white;
-    border:none;
-    padding:15px 35px;
-    font-size:24px;
-    font-weight:bold;
-    border-radius:10px;
-    cursor:pointer;
-    margin-top:20px;
+.nut-trang{
+    text-align:center;
+    margin:30px 0;
 }
 
-.nut-trang button:hover{
+.nut-trang a{
+    display:inline-block;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    font-size:22px;
+    font-weight:bold;
+    border-radius:10px;
+}
+
+.nut-trang a:hover{
+    background:#1b5e20;
+}
+
+.khung-quay-lai{
+    margin-top:40px;
+    text-align:center;
+}
+
+.khung-quay-lai a{
+    display:inline-block;
+    background:#2e7d32;
+    color:white;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    padding:12px 30px;
+    border-radius:10px;
+    border:2px solid #1b5e20;
+}
+
+.khung-quay-lai a:hover{
     background:#1b5e20;
 }
