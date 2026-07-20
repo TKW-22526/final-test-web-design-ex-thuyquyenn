@@ -2,16 +2,59 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Chi tiết sản phẩm</title>
-    <link rel="stylesheet" href="../css/style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết cây cảnh</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<div class="khung-chi-tiet">
-    <div id="chi-tiet-san-pham"></div>
-</div>
+<header>
+    <h1>VƯỜN CÂY XANH</h1>
+
+    <nav>
+        <a href="../index.html">Trang chủ</a>
+        <a href="gioi-thieu.html">Giới thiệu</a>
+        <a href="san-pham.html">Cây cảnh</a>
+        <a href="lien-he.html">Liên hệ</a>
+    </nav>
+</header>
+
+<section class="container">
+
+    <div id="chi-tiet" class="detail"></div>
+
+</section>
+
+<footer>
+    <p>© 2026 Website Giới Thiệu Cây Cảnh</p>
+</footer>
 
 <script src="../js/script.js"></script>
+
+<script>
+
+const thamSo = new URLSearchParams(window.location.search);
+
+const ma = thamSo.get("id");
+
+const cay = sanPham[ma];
+
+const chiTiet = document.getElementById("chi-tiet");
+
+if(cay){
+
+    chiTiet.innerHTML = `
+        <img src="${cay.hinh}">
+
+        <h2>${cay.ten}</h2>
+
+        <h3>${cay.gia}</h3>
+
+        <p>${cay.moTa}</p>
+    `;
+}
+
+</script>
 
 </body>
 </html>
